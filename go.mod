@@ -4,8 +4,8 @@ go 1.25.0
 
 require (
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.29.0
-	github.com/kamalyes/go-logger v0.4.6-0.20260320160038-f1cdda12311b
-	github.com/kamalyes/go-toolbox v0.11.87
+	github.com/kamalyes/go-logger v0.4.6
+	github.com/kamalyes/go-toolbox v0.12.0
 	github.com/redis/go-redis/v9 v9.18.0
 	github.com/shirou/gopsutil/v3 v3.24.5
 	github.com/stretchr/testify v1.11.1
@@ -36,3 +36,10 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260414002931-afd174a4e478 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+// 本地开发替换
+// replace github.com/kamalyes/go-toolbox => ../go-toolbox
+
+// replace github.com/kamalyes/go-jsonpath => ../go-jsonpath
+
+// replace github.com/kamalyes/go-logger => ../go-logger
